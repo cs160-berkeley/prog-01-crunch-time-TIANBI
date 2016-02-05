@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.tianbi.crunchtime.MainActivity"
+        tools:showIn="@layout/activity_main"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Selecting Exercise Type and Entering Exercise Amount:"
+            android:id="@+id/textView"
+            android:layout_weight="0.03" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner" />
+
+            <EditText
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/AmountText"
+                android:layout_gravity="right"
+                android:layout_weight="0.08" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go!"
+                android:id="@+id/button"
+                android:layout_weight="0.03"
+                android:onClick="buttonListener"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="The Calorie Amount You Could Burn (Kcal):"
+            android:id="@+id/textView2"
+            android:layout_weight="0.03" />
+
+        <EditText
+            android:layout_width="351dp"
+            android:layout_height="0dp"
+            android:id="@+id/CalorieText"
+            android:inputType="number"
+            android:imeOptions="actionSend"
+            android:layout_weight="0.03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Same Amount of Calorie Burning via Other Exercises"
+            android:id="@+id/textView3"
+            android:layout_weight="0.03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Pushup(Reps):"
+            android:id="@+id/textView4"
+            android:layout_weight="0.03" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/PushupText"
+            android:layout_weight="0.03" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Situp(Reps):"
+            android:id="@+id/textView5"
+            android:layout_weight="0.03" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/SitupText"
+            android:layout_weight="0.03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Squats(Reps):"
+            android:id="@+id/textView6"
+            android:layout_weight="0.03" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/SquatsText"
+            android:layout_weight="0.03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Leg-Lift(Minutes):"
+            android:id="@+id/textView7"
+            android:layout_weight="0.03" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/LegLiftText"
+            android:layout_weight="0.03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Plank(Minutes):"
+            android:id="@+id/textView8"
+            android:layout_weight="0.03" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/PlankText"
+            android:layout_weight="0.03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Jumping Jacks(Minutes):"
+            android:id="@+id/textView9"
+            android:layout_weight="0.03" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/JumpingJacksText"
+            android:layout_weight="0.03" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Pullup(Reps):"
+            android:id="@+id/textView10"
+            android:layout_weight="0.03" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/PullupText"
+            android:layout_weight="0.03" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Cycling(Minutes):"
+            android:id="@+id/textView11"
+            android:layout_weight="0.03" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/CyclingText"
+            android:layout_weight="0.03" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Walking(Minutes):"
+            android:id="@+id/textView12"
+            android:layout_weight="0.03" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/WalkingText"
+            android:layout_weight="0.03" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Jogging(Minutes):"
+            android:id="@+id/textView13"
+            android:layout_weight="0.03" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/JoggingText"
+            android:layout_weight="0.03" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Swimming(Minutes):"
+            android:id="@+id/textView14"
+            android:layout_weight="0.03" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/SwimmingText"
+            android:layout_weight="0.03" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Stair-Climbing(Minutes):"
+            android:id="@+id/textView15"
+            android:layout_weight="0.03" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/StairClimbingText"
+            android:layout_weight="0.03" />
+
+    </LinearLayout>
+</ScrollView>
